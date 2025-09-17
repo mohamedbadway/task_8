@@ -1,0 +1,87 @@
+/* ===== Global Styles ===== */
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background: #f0f0f0;
+  line-height: 1.6;
+}
+
+/* ===== Header ===== */
+header {
+  background: url('https://picsum.photos/1200/300') no-repeat center center/cover;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* ===== Card (Box Model) ===== */
+.card {
+  background: white;
+  margin: 20px auto;
+  padding: 20px;
+  border: 3px solid black;
+  width: 300px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.card button {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* ===== Priority ===== */
+p {
+  color: blue; /* أقل أولوية */
+}
+
+.highlight {
+  color: green; /* أعلى من tag */
+}
+
+#special {
+  color: orange; /* أعلى حاجة */
+}
+
+/* ===== Descendant vs Direct Child ===== */
+.test-selectors p {
+  color: red; /* descendant */
+}
+
+.test-selectors > p {
+  font-weight: bold; /* direct child */
+}
+
+.test-selectors span {
+  color: purple;
+}
+
+/* ===== Footer ===== */
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
